@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "expandedequipment",
+	"version": "${version}",
+	"name": "Expanded Equipment",
+	"description": "Expands on vanilla equipment adding new resources, tools, and armor.",
+	"authors": [
+		"Funguyman10"
+	],
+	"contact": {
+		"homepage": "https://github.com/Funguyman10",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/expandedequipment/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.funguyman10.expandedequipment.ExpandedEquipment"
+		],
+		"fabric-datagen": [
+			"com.funguyman10.expandedequipment.ExpandedEquipmentDataGenerator"
+		],
+		"client": [
+			"com.funguyman10.expandedequipment.ExpandedEquipmentClient"
+		]
+	},
+	"mixins": [
+		"expandedequipment.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
