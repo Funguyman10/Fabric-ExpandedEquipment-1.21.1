@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ],
+  "remove": "#expandedequipment:needs_copper_tool"
+}

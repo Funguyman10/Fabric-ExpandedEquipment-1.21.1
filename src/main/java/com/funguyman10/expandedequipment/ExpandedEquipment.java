@@ -1,5 +1,10 @@
 package com.funguyman10.expandedequipment;
 
+import com.funguyman10.expandedequipment.block.ModBlocks;
+import com.funguyman10.expandedequipment.custom.ModItemGroups;
+import com.funguyman10.expandedequipment.item.ModItems;
+import com.funguyman10.expandedequipment.util.ModLootTableModifiers;
+import com.funguyman10.expandedequipment.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +16,10 @@ public class ExpandedEquipment implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
+		ModWorldGeneration.generateModWorldGen();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "D": {
+      "item": "minecraft:diamond_shovel"
+    },
+    "R": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:diamond_axe"
+    }
+  },
+  "pattern": [
+    "SAD",
+    " R ",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "expandedequipment:diamond_paxel"
+  }
+}
