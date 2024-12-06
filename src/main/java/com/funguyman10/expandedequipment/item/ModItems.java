@@ -2,9 +2,6 @@ package com.funguyman10.expandedequipment.item;
 
 import com.funguyman10.expandedequipment.ExpandedEquipment;
 import com.funguyman10.expandedequipment.custom.*;
-import net.minecraft.component.type.AttributeModifierSlot;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

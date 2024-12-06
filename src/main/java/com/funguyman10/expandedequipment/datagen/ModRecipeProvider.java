@@ -264,5 +264,75 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CHORUNDUM_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.CHORUNDUM_UPGRADE_TEMPLATE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WOODEN_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', ItemTags.PLANKS)
+                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STONE_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', ItemTags.STONE_TOOL_MATERIALS)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GOLDEN_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', Items.IRON_INGOT)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', Items.DIAMOND)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.COPPER_SPEAR)
+                .pattern("  S")
+                .pattern(" A ")
+                .pattern("A  ")
+                .input('A', Items.STICK)
+                .input('S', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter);
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(ModItems.DIAMOND_SPEAR), Ingredient.ofItems(Items.NETHERITE_INGOT), RecipeCategory.TOOLS, ModItems.NETHERITE_SPEAR)
+                .criterion("has_netherite", conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter, "netherite_spear_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.CHORUNDUM_UPGRADE_TEMPLATE), Ingredient.ofItems(ModItems.NETHERITE_SPEAR), Ingredient.ofItems(ModItems.CHORUNDUM), RecipeCategory.TOOLS, ModItems.CHORUNDUM_SPEAR)
+                .criterion("has_netherite", conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(exporter, "chorundum_spear_smithing");
+
     }
 }
