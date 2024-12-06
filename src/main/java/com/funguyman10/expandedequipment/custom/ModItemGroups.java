@@ -60,6 +60,15 @@ public class ModItemGroups {
                         entries.add(ModItems.COPPER_SHOVEL);
                         entries.add(ModItems.COPPER_HOE);
                         entries.add(ModItems.COPPER_PAXEL);
+
+                        entries.add(ModItems.COPPER_SPEAR);
+                        entries.add(ModItems.CHORUNDUM_SPEAR);
+                        entries.add(ModItems.WOODEN_SPEAR);
+                        entries.add(ModItems.STONE_SPEAR);
+                        entries.add(ModItems.IRON_SPEAR);
+                        entries.add(ModItems.GOLDEN_SPEAR);
+                        entries.add(ModItems.DIAMOND_SPEAR);
+                        entries.add(ModItems.NETHERITE_SPEAR);
                     }).build());
 
     public static final ItemGroup EXPANDED_EQUIPMENT_ARMOR_TAB = Registry.register(Registries.ITEM_GROUP,

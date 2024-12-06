@@ -1,10 +1,10 @@
 package com.funguyman10.expandedequipment.item;
 
 import com.funguyman10.expandedequipment.ExpandedEquipment;
-import com.funguyman10.expandedequipment.custom.CustomSmithingTemplateItem;
-import com.funguyman10.expandedequipment.custom.ModArmorMaterials;
-import com.funguyman10.expandedequipment.custom.ModToolMaterials;
-import com.funguyman10.expandedequipment.custom.PaxelItem;
+import com.funguyman10.expandedequipment.custom.*;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,6 +16,19 @@ public class ModItems {
     public static final Item ENERGETIC_ROCK = registerItem("energetic_rock", new Item(new Item.Settings()));
 
     public static final Item CHORUNDUM_UPGRADE_TEMPLATE = registerItem("chorundum_upgrade_template", CustomSmithingTemplateItem.createChorundumUpgradeTemplate());
+
+    public static final Item WOODEN_SPEAR = registerItem("wooden_spear", new SpearItem(ToolMaterials.WOOD,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.WOOD, 2, -2.1f, 1))));
+    public static final Item STONE_SPEAR = registerItem("stone_spear", new SpearItem(ToolMaterials.STONE,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.STONE, 2, -2.1f, 1))));
+    public static final Item GOLDEN_SPEAR = registerItem("golden_spear", new SpearItem(ToolMaterials.GOLD,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.GOLD, 2, -2.1f, 1))));
+    public static final Item IRON_SPEAR = registerItem("iron_spear", new SpearItem(ToolMaterials.IRON,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.IRON, 2, -2.1f, 1))));
+    public static final Item DIAMOND_SPEAR = registerItem("diamond_spear", new SpearItem(ToolMaterials.DIAMOND,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2, -2.1f, 1))));
+    public static final Item NETHERITE_SPEAR = registerItem("netherite_spear", new SpearItem(ToolMaterials.NETHERITE,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2.1f, 1))));
 
     public static final Item WOODEN_PAXEL = registerItem("wooden_paxel", new PaxelItem(ToolMaterials.WOOD, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -3.0f))));
@@ -42,6 +55,8 @@ public class ModItems {
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CHORUNDUM, -5, 0))));
     public static final Item CHORUNDUM_PAXEL = registerItem("chorundum_paxel", new PaxelItem(ModToolMaterials.CHORUNDUM, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ModToolMaterials.CHORUNDUM, 3, -3.0f))));
+    public static final Item CHORUNDUM_SPEAR = registerItem("chorundum_spear", new SpearItem(ModToolMaterials.CHORUNDUM,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ModToolMaterials.CHORUNDUM, 2, -2.1f, 1))));
 
     public static final Item COPPER_SWORD = registerItem("copper_sword", new SwordItem(ModToolMaterials.COPPER, new Item.Settings()
             .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.COPPER, 3, -2.4f))));
@@ -55,6 +70,8 @@ public class ModItems {
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.COPPER, -2, 0))));
     public static final Item COPPER_PAXEL = registerItem("copper_paxel", new PaxelItem(ModToolMaterials.COPPER, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ModToolMaterials.COPPER, 3, -3.0f))));
+    public static final Item COPPER_SPEAR = registerItem("copper_spear", new SpearItem(ModToolMaterials.COPPER,
+            new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ModToolMaterials.COPPER, 2, -2.1f, 1))));
 
     public static final Item CHORUNDUM_HELMET = registerItem("chorundum_helmet", new ArmorItem(ModArmorMaterials.CHORUNDUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
             new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(45))));

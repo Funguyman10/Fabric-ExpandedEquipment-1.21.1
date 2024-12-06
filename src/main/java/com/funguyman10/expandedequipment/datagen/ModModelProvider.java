@@ -38,6 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHORUNDUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHORUNDUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHORUNDUM_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHORUNDUM_SPEAR, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
@@ -45,6 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COPPER_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SPEAR, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.WOODEN_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_PAXEL, Models.HANDHELD);
@@ -52,6 +54,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IRON_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_PAXEL, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.WOODEN_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_SPEAR, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHORUNDUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CHORUNDUM_CHESTPLATE));

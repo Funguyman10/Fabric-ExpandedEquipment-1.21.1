@@ -19,12 +19,14 @@
   "item.expandedequipment.copper_shovel": "Copper Shovel",
   "item.expandedequipment.copper_hoe": "Copper Hoe",
   "item.expandedequipment.copper_sword": "Copper Sword",
+  "item.expandedequipment.copper_spear": "Copper Spear",
 
   "item.expandedequipment.chorundum_pickaxe": "Chorundum Pickaxe",
   "item.expandedequipment.chorundum_axe": "Chorundum Axe",
   "item.expandedequipment.chorundum_shovel": "Chorundum Shovel",
   "item.expandedequipment.chorundum_hoe": "Chorundum Hoe",
   "item.expandedequipment.chorundum_sword": "Chorundum Sword",
+  "item.expandedequipment.chorundum_spear": "Chorundum Spear",
 
   "item.expandedequipment.copper_helmet": "Copper Helmet",
   "item.expandedequipment.copper_chestplate": "Copper Chestplate",
@@ -44,6 +46,13 @@
   "item.expandedequipment.netherite_paxel": "Netherite Paxel",
   "item.expandedequipment.copper_paxel": "Copper Paxel",
   "item.expandedequipment.chorundum_paxel": "Chorundum Paxel",
+
+  "item.expandedequipment.wooden_spear": "Wooden Spear",
+  "item.expandedequipment.stone_spear": "Stone Spear",
+  "item.expandedequipment.iron_spear": "Iron Spear",
+  "item.expandedequipment.golden_spear": "Golden Spear",
+  "item.expandedequipment.diamond_spear": "Diamoind Spear",
+  "item.expandedequipment.netherite_spear": "Netherite Spear",
 
   "item.expandedequipment.smithing_template.ingredients": "Ingredients",
   "item.expandedequipment.chorundum_upgrade_template": "Smithing Template",

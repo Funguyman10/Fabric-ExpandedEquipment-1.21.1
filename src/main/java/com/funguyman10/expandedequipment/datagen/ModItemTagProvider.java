@@ -57,7 +57,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.COPPER_SWORD)
-                .add(ModItems.CHORUNDUM_SWORD);
+                .add(ModItems.CHORUNDUM_SWORD)
+                .add(ModItems.CHORUNDUM_SPEAR)
+                .add(ModItems.COPPER_SPEAR)
+                .add(ModItems.WOODEN_SPEAR)
+                .add(ModItems.STONE_SPEAR)
+                .add(ModItems.GOLDEN_SPEAR)
+                .add(ModItems.IRON_SPEAR)
+                .add(ModItems.DIAMOND_SPEAR)
+                .add(ModItems.NETHERITE_SPEAR);
 
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.COPPER_HOE)
